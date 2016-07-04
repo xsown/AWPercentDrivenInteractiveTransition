@@ -136,6 +136,13 @@
         CFTimeInterval timeSincePause = [layer convertTime:CACurrentMediaTime() fromLayer:nil] - pausedTime;
         layer.beginTime = timeSincePause;
     }
+    else {
+        UIView* toView = [_transitionContext viewForKey:UITransitionContextToViewKey];
+        UIView* snapshotView = [toView viewWithTag:snapshotViewTag];
+        if (snapshotView) {
+            snapshotView.hidden = NO;
+        }
+    }
 }
 
 @end

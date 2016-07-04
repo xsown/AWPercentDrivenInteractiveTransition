@@ -39,6 +39,8 @@
 @property (nonatomic, readonly) CGFloat duration;
 @property (readonly) CGFloat percentComplete;
 
+@property (nonatomic) NSInteger snapshotViewTag;
+
 /**
  The animated transitioning that this percent driven interaction should control.
  This property must be set prior to the start of a transition.
