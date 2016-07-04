@@ -138,7 +138,7 @@
     }
     else {
         UIView* toView = [_transitionContext viewForKey:UITransitionContextToViewKey];
-        UIView* snapshotView = [toView viewWithTag:snapshotViewTag];
+        UIView* snapshotView = [toView viewWithTag:self.snapshotViewTag];
         if (snapshotView) {
             snapshotView.hidden = NO;
         }
